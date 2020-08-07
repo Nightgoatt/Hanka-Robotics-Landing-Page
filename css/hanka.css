@@ -88,7 +88,7 @@ header {
   background-color: #000;
   color: inherit;
   padding: 0.50rem;
-  border: 0;
+  border: 1px solid #f00;
   border-radius: 10px;
   margin: 10px 0 5px 0;
 } 
@@ -111,9 +111,9 @@ header {
   transition: background-color 1s;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 300px) {
   #sign-up-page {
-    margin-top: 120px;
+    margin: 100px 0;
   }
 }
 
@@ -139,7 +139,7 @@ header {
 display: flex;
 align-items: center;
 justify-content: center;
-height: 125px;
+height: 150px;
 width: 15vw;
 font-size: 100px;
 }
@@ -152,18 +152,30 @@ font-size: 100px;
 }
 
 
-@media (max-width: 550px) {
-  #features .desc {
+@media (max-width: 400px) {
+  #Tech .desc {
     width: 100%;
     text-align: center;
-    padding: 0;
-    height: 150px;
+    height: auto;
+    line-height: 1.2rem;
+    padding: 10px;
   }
-}
 
-@media (max-width: 650px) {
-  #features {
-    margin-top: 0;
+  #Tech h2 {
+   margin: 0 0 10px 0;
+  }
+
+  #Tech .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Tech .icon {
+    margin-left: 162px;
+  }
+
+  #Tech .material-icons {
+    font-size: 5rem;
   }
 }
 
